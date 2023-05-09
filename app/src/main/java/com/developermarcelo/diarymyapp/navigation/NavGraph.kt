@@ -23,7 +23,7 @@ fun SetupNavGraph(startDestination: String, navHostController: NavHostController
 @OptIn(ExperimentalMaterial3Api::class)
 fun NavGraphBuilder.authenticationRoute() {
     composable(route = Screen.Authentication.route) {
-        AuthenticationScreen()
+        AuthenticationScreen(loadingState = false, onButtonClicked = {})
     }
 }
 
